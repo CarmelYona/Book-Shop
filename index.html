@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+    <h1>Book Shop</h1>
+    <section class="Book">
+        <a onclick="onAddBook()" href="#creat-book">Creat Book</a>
+        <table class="table">
+            <thead>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>rate</th>
+                <th>action</th>
+            </thead>
+            <tbody class="tbody" border="1">
+            </tbody>
+        </table>
+    </section>
+
+    <div class="modal">
+        <h3></h3>
+        <h4>price <span></span></h4>
+        <h5>Book Description</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus ducimus eaque quisquam. Obcaecati natus quae laudantium vero dignissimos in expedita distinctio! Esse commodi, facilis eveniet quo quae excepturi corporis.</p>
+        <form onsubmit="onAddRate(event,)">
+            <input class="input" type="number" autocomplete="off" name="num" placeholder="0-10" min="0" max="10" />
+        </form>
+        <button onclick="onCloseModal()">Close</button>
+
+    </div>
+    <script src="js/service/util.js "></script>
+    <script src="js/service/storage.js "></script>
+    <script src="js/service/servic.js "></script>
+    <script src="js/service/controller.js "></script>
+
+</body>
+
+</html>
